@@ -1,6 +1,15 @@
 var express = require('express');
 var morgan = require('morgan');
+var connectBrowserSync = require('connect-browser-sync');
 var app = express();
+
+// Development server configurations.
+// To change environment, execute command `export NODE_ENV=production` at commandline.
+if ( app.get('env') === 'development' ) {
+  var browserSync = require('browser-sync');
+  var browserSyncConfiguration = { "files": "app/**/*" }
+  app.use(connectBrowserSync(browserSync(browserSyncConfiguration)));
+}
 
 app.use(morgan('dev'));
 app.use(express.static(__dirname + '/app/static'));

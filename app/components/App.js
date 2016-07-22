@@ -8,28 +8,28 @@ const App = () => (
     }}>
     <div>
       {'{'}
-        <div>{'key1 : hoge,'}</div>
-        <div>{'key2 : fuga,'}</div>
+        <div>{'"key1" : "hoge",'}</div>
+        <div>{'"key2" : "fuga",'}</div>
         <div>
-          {'object : {'}
-            <div>{'key1 : hoge,'}</div>
-            <div>{'key2 : fuga,'}</div>
-            <div><input type="text" name="key" value="key3" />{'ok : '}<a href="#">value</a> <a href="#">object</a> <a href="#">list</a></div>
+          {'"object : {'}
+            <div>{'"key1" : "hoge",'}</div>
+            <div>{'"key2" : "fuga",'}</div>
+            <div><input type="text" name="key" value="key3" />{' : '}<a href="#">value</a> <a href="#">object</a> <a href="#">list</a></div>
           {'},'}
         </div>
         <div>
-          {'list : ['}
-            <div>{'key1,'}</div>
-            <div>{'key2'}</div>
+          {'"list" : ['}
+            <div>{'"key1",'}</div>
+            <div>{'"key2"'}</div>
             <div><a href="#">value</a> <a className="inactive">object</a> <a className="inactive">list</a></div>
           {'],'}
         </div>
         <div>
-          {'list2 : ['}
-            <div>{'key1,'}</div>
-            <div>{'key2,'}</div>
+          {'"list2" : ['}
+            <div>{'"key1",'}</div>
+            <div>{'"key2",'}</div>
             <div>
-              <input type="text" name="key" />{'ok'}
+              <input type="text" name="key" />
             </div>
           {']'}
         </div>

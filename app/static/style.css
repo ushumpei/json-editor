@@ -1,6 +1,6 @@
 div > div {
   position: relative;
-  left: 10px;
+  left: 15px;
 }
 .inactive {
   opacity: 0.2;

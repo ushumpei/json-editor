@@ -7,7 +7,7 @@ var app = express();
 // To change environment, execute command `export NODE_ENV=production` at commandline.
 if ( app.get('env') === 'development' ) {
   var browserSync = require('browser-sync');
-  var browserSyncConfiguration = { "files": "app/**/*" }
+  var browserSyncConfiguration = { "files": "app/static/*" }
   app.use(connectBrowserSync(browserSync(browserSyncConfiguration)));
 }
 

@@ -1,6 +1,6 @@
-div > div {
+.json-item {
   position: relative;
-  left: 15px;
+  left: 2rem;
 }
 .inactive {
   opacity: 0.2;
